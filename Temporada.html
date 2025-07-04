@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uñas de Temporada</title>
+    <link rel="stylesheet" href="Css/Blog.css">
+    <link rel="icon" href="img/Logo.jpg" type="image/png">
+</head>
+
+<body>
+    <div id="outer">
+        <header id="header">
+            <nav id="menu">
+                <div id="Logo">
+                    <h2>Yer Nails</h2>
+                </div>
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
+                </div>
+                <div id="navmenu">
+                    <a href="index.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>
+                    <a href="Blog.html">
+                        <h3>Blogs</h3>
+                    </a>
+                    <a href="Contacto.html">
+                        <h3>Contacto</h3>
+                    </a>
+                    <a href="PreguntasFrecuentes.html">
+                        <h3>Preguntas Frecuentes</h3>
+                    </a>
+                </div>
+                <div id="espaciador"></div>
+            </nav>
+        </header>
+
+        <nav id="ComboBox">
+            <nav id="Logo">
+                <h3>BLOGS</h3>
+            </nav>
+            <div id="Combo">
+                <h3>Categoría</h3>
+                <div id="Categoria">
+                    <select id="Categorias" onchange="location = this.value;">
+                        <option value="Temporada.html">Uñas para Temporada</option>
+                        <option value="Blog.html">Todos los Artículos</option>
+                        <option value="Experiencias.html">Experiencias Diseñando</option>
+                        <option value="Personalizados.html">Diseños Personalizados</option>
+                    </select>
+                </div>
+                <img src="Resources/lupa.png" alt="">
+            </div>
+        </nav>
+
+        <div id="texto">
+            <h3>Uñas de Temporada</h3>
+        </div>
+
+        <main id="main">
+
+            <div class="caja">
+                <a href="Articulo_TendenciaParaUñasTemporada.html">
+                    <div id="imagen">
+                        <img src="Resources/fresa.jpg" alt="fresa">
+                    </div>
+                    <h3>Tendencias de uñas para esta temporada</h3>
+                </a>
+            </div>
+
+            <div class="caja">
+                <a href="Articulo_CelebraHalloweenconestosdiseños.html">
+                    <div id="imagen">
+                        <img src="Resources/Halloween.png" alt="Halloween">
+                    </div>
+                    <h3>Celebra Halloween con estos diseños</h3>
+                </a>
+            </div>
+
+            <div class="caja">
+                <a href="Articulo_EstilosparaFebreroMariposas.html">
+                    <div id="imagen">
+                        <img src="Resources/Mariposas.png" alt="Mariposas">
+                    </div>
+                    <h3>Estilos para Febrero con mariposas</h3>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <footer id="Footer">
+        <div id="Redes">
+            <div id="red">
+                <img src="Resources/whatsapp.png" alt="">
+                <h3>6105-5884</h3>
+            </div>
+            <div id="red">
+                <a href="https://www.instagram.com/yernailstudio/"><img src="Resources/instagram.png" alt=""></a>
+                <h3>Year Nails</h3>
+            </div>
+        </div>
+        <div id="Ubicación">
+            <h2>Ubicación</h2>
+            <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

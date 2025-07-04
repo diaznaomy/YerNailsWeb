@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiseñoFloral</title>
+    <link rel="stylesheet" href="Css/Articulo.css">
+    <link rel="icon" href="img/Logo.jpg" type="image/png">
+</head>
+
+<body>
+    <div id="outer">
+
+        <header>
+            <nav id="menu">
+                <div id="Logo">
+                    <h2>Yer Nails</h2>
+                </div>
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
+                </div>
+                <div id="navmenu">
+                    <a href="index.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>
+                    <a href="Blog.html">
+                        <h3>Blogs</h3>
+                    </a>
+                    <a href="Contacto.html">
+                        <h3>Contacto</h3>
+                    </a>
+                    <a href="PreguntasFrecuentes.html">
+                        <h3>Preguntas Frecuentes</h3>
+                    </a>
+                    <a href="AcercaDe.html">
+                        <h3>Acerca de</h3>
+                    </a>
+                </div>
+                <div id="espaciador"></div>
+            </nav>
+        </header>
+
+        <nav id="ComboBox">
+            <nav id="Logo">
+                <h3>BLOGS</h3>
+            </nav>
+            <div id="Combo">
+                <h3>Categoría</h3>
+                <div id="Categoria">
+                    <select id="Categorias" onchange="location = this.value;">
+                        <option value="Experiencias.html" selected disabled>Selecciona una categoría</option>
+                        <option value="Blog.html">Todos los Artículos</option>
+                        <option value="Temporada.html">Uñas para Temporada</option>
+                        <option value="Experiencias.html">Experiencias Diseñando</option>
+                        <option value="Personalizados.html">Diseños Personalizados</option>
+                    </select>
+                </div>
+                <img src="Resources/lupa.png" alt="">
+            </div>
+        </nav>
+
+        <div id="texto">
+            <h3><a href="Blog.html">Blogs</a> / Un Toque de Magia Rosa</h3>
+        </div>
+
+        <main id="main">
+
+            <div class="caja">
+                <div id="up">
+                    <img src="Resources/ArticuloMagiaRosa.jpg" alt="">
+                    <div id="Articulo">
+                        <h2>Crear este diseño floral me ha recordado porque amo tanto el nail art</h2>
+                        <h3>Todo comenzó cuando mi clienta llegó buscando algo elegante pero con un aire de 
+                            fantasía y delicadeza. Juntas conversamos sobre la magia que puede transmitir el 
+                            color rosa y cómo un pequeño toque floral puede transformar por completo el look de las manos.
+                            Trabajé con una base rosa translúcida y un ligero shimmer que da ese efecto de brillo sutil, 
+                            perfecto para quienes aman el glamour discreto. El detalle estrella fueron las flores en 3D,
+                             cuidadosamente modeladas en los dedos anulares.
+                        </h3>
+                    </div>
+                </div>
+                <div id="down">
+                    <div id="Articulo">
+                        <h2>Mientras avanzaba con el diseño, notaba la emoción de mi clienta!!!</h2>
+                        <h3>
+                            Ver cómo cada capa de esmalte y cada detalle floral cobraban vida. Al finalizar, 
+                            no pudo evitar sonreír y admirar sus uñas desde distintos ángulos. Me contó que este 
+                            diseño le hacía sentir más femenina, delicada y segura de sí misma. Sin duda, 
+                            para ambas fue una experiencia mágica y memorable, donde el color rosa y las flores se 
+                            convirtieron en los protagonistas de un look lleno de encanto y sofisticación.
+                        </h3>
+                    </div>
+                    <img src="Resources/FloresPNG.png" alt="">
+                </div>
+            </div>
+
+            <div class="Comentarios">
+                <h2>Comentarios</h2>
+                <div id="coment">
+                    <div>
+                        <img src="Resources/avatar.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Karla</h2>
+                    </div>
+                    <div>
+                        <img src="Resources/like.png" alt="">
+                    </div>
+                </div>
+                <div id="reseña">
+                    <h3>Las mejores uñas que me he hecho. Tienen mucha variedad de diseños. 🥰</h3>
+                </div>
+                <div id="insertar">
+                    <h3>Agrega tu comentario</h3>
+                    <div id="publicar">
+                        <input type="text" id="insert" placeholder="Escriba su comentario aquí">
+                        <button>Publicar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="Footer">
+        <div id="Redes">
+            <div id="red">
+                <img src="Resources/whatsapp.png" alt="">
+                <h3>6105-5884</h3>
+            </div>
+            <div id="red">
+                <a href="https://www.instagram.com/yernailstudio/"><img src="Resources/instagram.png" alt=""></a>
+                <h3>Year Nails</h3>
+            </div>
+        </div>
+        <div id="Ubicacion">
+            <h2>Ubicación</h2>
+            <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

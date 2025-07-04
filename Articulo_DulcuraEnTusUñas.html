@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulzura en tus Uñas</title>
+    <link rel="stylesheet" href="Css/Articulo.css">
+    <link rel="icon" href="img/Logo.jpg" type="image/png">
+</head>
+
+<body>
+    <div id="outer">
+        <header>
+            <nav id="menu">
+                <div id="Logo">
+                    <h2>Yer Nails</h2>
+                </div>
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
+                </div>
+                <div id="navmenu">
+                    <a href="index.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>
+                    <a href="Blog.html">
+                        <h3>Blogs</h3>
+                    </a>
+                    <a href="Contacto.html">
+                        <h3>Contacto</h3>
+                    </a>
+                    <a href="PreguntasFrecuentes.html">
+                        <h3>Preguntas Frecuentes</h3>
+                    </a>
+                    <a href="AcercaDe.html">
+                        <h3>Acerca de</h3>
+                    </a>
+                </div>
+                <div id="espaciador"></div>
+            </nav>
+        </header>
+
+        <nav id="ComboBox">
+            <nav id="Logo">
+                <h3>BLOGS</h3>
+            </nav>
+            <div id="Combo">
+                <h3>Categoría</h3>
+                <div id="Categoria">
+                    <select id="Categorias" onchange="location = this.value;">
+                        <option value="Experiencias.html" selected disabled>Selecciona una categoría</option>
+                        <option value="Blog.html">Todos los Artículos</option>
+                        <option value="Temporada.html">Uñas para Temporada</option>
+                        <option value="Experiencias.html">Experiencias Diseñando</option>
+                        <option value="Personalizados.html">Diseños Personalizados</option>
+                    </select>
+                </div>
+                <img src="Resources/lupa.png" alt="">
+            </div>
+        </nav>
+
+        <div id="texto">
+            <h3><a href="Blog.html">Blogs</a> / Dulzura en tus Uñas</h3>
+        </div>
+
+        <main id="main">
+
+            <div class="caja">
+                <div id="up">
+                    <img src="Resources/Articulo_Dulzura.jpg" alt="">
+                    <div id="Articulo">
+                        <h2>¿Alguna vez soñaste con llevar la ternura y el encanto de la repostería en tus manos?</h2>
+                        <h3>Con la nueva colección de press-on nails de Yer Nails, 
+                            este sueño se hace realidad. Inspiradas en el mundo kawaii y 
+                            la creatividad artesanal costarricense, estas uñas hechas a mano 
+                            destacan por su detalle y originalidad.Cada diseño captura la esencia de los postres más adorables: un osito con huevo, un cupcake sonriente, helados decorados y glaseados en tonos suaves y pasteles. Los relieves en 3D y los colores cuidadosamente seleccionados convierten a cada uña en una pequeña obra de arte. Además, el empaque en tonos rosados y el mensaje “100% costarricense” resaltan la calidad y el orgullo local detrás de cada pieza.
+                        </h3>
+                    </div>
+                </div>
+                <div id="down">
+                    <div id="Articulo">
+                        <h2>Atrévete a brillar con “Dulzura en tus Uñas”</h2>
+                        <h3>
+                            Estas press-on nails no solo son fáciles de usar y reutilizables, 
+                            sino que también permiten expresar tu personalidad de manera dulce y divertida, 
+                            sin dañar tus uñas naturales. Son ideales para quienes aman los diseños únicos, 
+                            el arte hecho a mano y quieren destacar en cualquier ocasión.
+                        </h3>
+                    </div>
+                    <img src="Resources/Cinnamoroll.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="Comentarios">
+                <h2>Comentarios</h2>
+                <div id="coment">
+                    <div>
+                        <img src="Resources/avatar.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Raven</h2>
+                    </div>
+                    <div>
+                        <img src="Resources/like.png" alt="">
+                    </div>
+                </div>
+                <div id="reseña">
+                    <h3>¡Me encantaron los diseños! Súper recomendados, el servicio es excelente.💅✨</h3>
+                </div>
+                <div id="insertar">
+                    <h3>Agrega tu comentario</h3>
+                    <div id="publicar">
+                        <input type="text" id="insert" placeholder="Escriba su comentario aquí">
+                        <button>Publicar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="Footer">
+        <div id="Redes">
+            <div id="red">
+                <img src="Resources/whatsapp.png" alt="">
+                <h3>6105-5884</h3>
+            </div>
+            <div id="red">
+                <a href="https://www.instagram.com/yernailstudio/"><img src="Resources/instagram.png" alt=""></a>
+                <h3>Year Nails</h3>
+            </div>
+        </div>
+        <div id="Ubicacion">
+            <h2>Ubicación</h2>
+            <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

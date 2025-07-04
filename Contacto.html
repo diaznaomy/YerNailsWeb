@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Css/Contacto.css">
+    <link rel="icon" href="img/Logo.jpg" type="image/png">
+</head>
+
+<body>
+    <div id="outer">
+        <header id="header">
+            <nav id="menu">
+                <div id="Logo">
+                    <h2>Yer Nails</h2>
+                </div>
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
+                </div>
+                <div id="navmenu">
+                    <a href="index.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>
+                    <a href="Blog.html">
+                        <h3>Blogs</h3>
+                    </a>
+                    <a href="Contacto.html">
+                        <h3>Contacto</h3>
+                    </a>
+                    <a href="PreguntasFrecuentes.html">
+                        <h3>Preguntas Frecuentes</h3>
+                    </a>
+                    <a href="AcercaDe.html">
+                        <h3>Acerca de</h3>
+                    </a>
+                </div>
+                <div id="espaciador"></div>
+            </nav>
+        </header>
+
+        <main id="main">
+            <h2>Contacto</h2>
+            <div id="submain">
+                <div id="contact">
+                    <h2>Informacion de Contacto</h2>
+                    <div class="contacto">
+                        <img src="Resources/whatsappBlack.png" alt="">
+                        <h3>Teléfono: 6105-5884</h3>
+                    </div>
+                    <div class="contacto">
+                        <a href="https://www.instagram.com/yernailstudio/"><img src="Resources/instagramBlack.png"
+                                alt=""></a>
+                        <a href="https://www.instagram.com/yernailstudio/">
+                            <h3>Instagram: @YearNails</h3>
+                        </a>
+                    </div>
+                    <div class="contacto">
+                        <img src="Resources/location.png" alt="">
+                        <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
+                    </div>
+                    <div class="contacto">
+                        <img src="Resources/time.png" alt="">
+                        <h3>De 9am a 5pm</h3>
+                    </div>
+                    <div id="logo">
+                        <img src="img/Logo.jpg" alt="">
+                    </div>
+                </div>
+                <div id="formulario">
+                    <h2>Deseas contactarnos?</h2>
+                    <h3>Rellena el siguente formulario y nos pondremos en contacto lo más rapido que podamos</h3>
+                    <form action="/enviar" method="post">
+                        <div class="insert">
+                            <h3>Nombre Completo</h3>
+                            <input type="text" id="nombre" placeholder="Escribe tu nombre completo">
+                        </div>
+                        <div class="insert">
+                            <h3>Correo</h3>
+                            <input type="text" id="correo" placeholder="Escribe su correo electrónico">
+                        </div>
+                        <div class="insert">
+                            <h3>Teléfono</h3>
+                            <input type="text" id="telefono" placeholder="Escribe su número de teléfono">
+                        </div>
+                        <div class="insert">
+                            <h3>Motivo de Contacto</h3>
+                            <select id="Motivo">
+                                <option value="Consulta">Consulta</option>
+                                <option value="Programar Cita">Programar Cita</option>
+                                <option value="Reclamo">Reclamo</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="insert">
+                            <h3>Como prefieres ser contactado?</h3>
+                            <div class="Rd">
+                                <input type="radio" id="contacto_tel" name="preferencia" value="tel">
+                                <img src="Resources/phone-call.png" alt="">
+                                <h3>Teléfono</h3>
+                                <input type="radio" id="contacto_email" name="preferencia" value="email">
+                                <img src="Resources/email.png" alt="">
+                                <h3>Correo</h3>
+                                <input type="radio" id="contacto_whatsapp" name="preferencia" value="whatsapp">
+                                <img src="Resources/whatsappBlack.png" alt="">
+                                <h3>WhatsApp</h3>
+                            </div>
+                        </div>
+                        <div class="insert">
+                            <h3>Mensaje (Opcional)</h3>
+                            <textarea id="textarea" placeholder="Escribe tu mensaje aquí"></textarea>
+                        </div>
+                        <button type="button" id="button" onclick="Enviar()">Enviar</button>
+
+                        <style>
+                            .error-radio {
+                                outline: 2px solid red;
+                            }
+                        </style>
+
+
+                        <script>
+                            function Enviar() {
+                                const nombre = document.getElementById('nombre');
+                                const correo = document.getElementById('correo');
+                                const telefono = document.getElementById('telefono');
+                                const boton = document.querySelector('button');
+                                const input = document.querySelector('input[type="text"]');
+                                const rd = document.querySelector('input[name="preferencia"]:checked');
+                                const mensaje = document.getElementById('textarea');
+
+                                if (nombre.value.trim() === "" || correo.value.trim() === "" || telefono.value.trim() === "" || !rd) {
+                                    alert("Por favor, completa todos los campos obligatorios.");
+                                    return;
+                                }
+
+                                const mensajeCompleto = `Nombre: ${nombre.value}\nCorreo: ${correo.value}\nTeléfono: ${telefono.value}\nMotivo de Contacto: ${document.getElementById('Motivo').value}\nPreferencia de Contacto: ${rd.value}\nMensaje: ${mensaje.value}`;
+
+                                alert("Formulario enviado\n" + "\n"  + mensajeCompleto);
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="Footer">
+        <div id="Redes">
+            <div id="red">
+                <a href="https://wa.me/50661055884">
+                    <img src="Resources/whatsapp.png" alt="">
+                </a>
+                <h3>6105-5884</h3>
+            </div>
+            <div id="red">
+                <a href="https://www.instagram.com/yernailstudio?igsh=MWVqeDNybjlmNXVu">
+                    <img src="Resources/instagram.png" alt="">
+                </a>
+                <h3>Yer Nails</h3>
+            </div>
+        </div>
+        <div id="Ubicación">
+            <h2>Ubicación</h2>
+            <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
+        </div>
+    </footer>
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

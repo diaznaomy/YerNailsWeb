@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebra Halloween con estos diseños</title>
+    <link rel="stylesheet" href="Css/Articulo.css">
+    <link rel="icon" href="img/Logo.jpg" type="image/png">
+</head>
+
+<body>
+    <div id="outer">
+
+        <header>
+            <nav id="menu">
+                <div id="Logo">
+                    <h2>Yer Nails</h2>
+                </div>
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
+                </div>
+                <div id="navmenu">
+                    <a href="index.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>
+                    <a href="Blog.html">
+                        <h3>Blogs</h3>
+                    </a>
+                    <a href="Contacto.html">
+                        <h3>Contacto</h3>
+                    </a>
+                    <a href="PreguntasFrecuentes.html">
+                        <h3>Preguntas Frecuentes</h3>
+                    </a>
+                    <a href="AcercaDe.html">
+                        <h3>Acerca de</h3>
+                    </a>
+                </div>
+                <div id="espaciador"></div>
+            </nav>
+        </header>
+
+        <nav id="ComboBox">
+            <nav id="Logo">
+                <h3>BLOGS</h3>
+            </nav>
+            <div id="Combo">
+                <h3>Categoría</h3>
+                <div id="Categoria">
+                    <select id="Categorias" onchange="location = this.value;">
+                        <option value="Experiencias.html" selected disabled>Selecciona una categoría</option>
+                        <option value="Blog.html">Todos los Artículos</option>
+                        <option value="Temporada.html">Uñas para Temporada</option>
+                        <option value="Experiencias.html">Experiencias Diseñando</option>
+                        <option value="Personalizados.html">Diseños Personalizados</option>
+                    </select>
+                </div>
+                <img src="Resources/lupa.png" alt="">
+            </div>
+        </nav>
+
+        <div id="texto">
+            <h3><a href="Blog.html">Blogs</a> / Celebra Halloween con estos diseños</h3>
+        </div>
+
+        <main id="main">
+
+            <div class="caja">
+                <div id="up">
+                    <img src="Resources/Articulo_Hallowen.jpg" alt="">
+                    <div id="Articulo">
+                        <h2>¿Te gustaría destacar en Halloween con un look terroríficamente original?</h2>
+                        <h3>Nada mejor que empezar por tus uñas. Este año, déjate llevar por la creatividad y 
+                            celebra Halloween con estos diseños únicos y atrevidos que transformarán por completo tu estilo. 
+                            La propuesta que ves en la imagen combina tonos lilas, negros y rosas, creando un contraste ideal 
+                            para la temporada más escalofriante del año. Los detalles de sangre goteando en tonos neón, 
+                            las calaveras, caras fantasmales y aplicaciones brillantes le dan a cada uña un aspecto impactante y 
+                            elegante al mismo tiempo.
+                        </h3>
+                    </div>
+                </div>
+                <div id="down">
+                    <div id="Articulo">
+                        <h2>Atrévete a celebrar Halloween con estilo y personalidad”</h2>
+                        <h3>
+                            Estos diseños no solo reflejan el espíritu de Halloween, sino que también demuestran 
+                            el alto nivel de detalle y creatividad de los artistas detrás de cada manicura. Convierte 
+                            tus uñas en la mejor carta de presentación para esta temporada espeluznante. 
+                            ¡Deja que tu lado oscuro brille con estos diseños espectaculares!
+                        </h3>
+                    </div>
+                    <img src="Resources/Ghost.webp" alt="">
+                </div>
+            </div>
+
+            <div class="Comentarios">
+                <h2>Comentarios</h2>
+                <div id="coment">
+                    <div>
+                        <img src="Resources/avatar.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Maria</h2>
+                    </div>
+                    <div>
+                        <img src="Resources/like.png" alt="">
+                    </div>
+                </div>
+                <div id="reseña">
+                    <h3>¡Quedaron justo como quería! Gracias por tanta paciencia y profesionalismo. 🎨</h3>
+                </div>
+                <div id="insertar">
+                    <h3>Agrega tu comentario</h3>
+                    <div id="publicar">
+                        <input type="text" id="insert" placeholder="Escriba su comentario aquí">
+                        <button>Publicar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="Footer">
+        <div id="Redes">
+            <div id="red">
+                <img src="Resources/whatsapp.png" alt="">
+                <h3>6105-5884</h3>
+            </div>
+            <div id="red">
+                <a href="https://www.instagram.com/yernailstudio/"><img src="Resources/instagram.png" alt=""></a>
+                <h3>Year Nails</h3>
+            </div>
+        </div>
+        <div id="Ubicacion">
+            <h2>Ubicación</h2>
+            <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

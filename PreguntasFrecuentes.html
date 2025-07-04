@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <link rel="stylesheet" href="./Css/Preguntas.css">
+    <link rel="icon" href="img/Logo.jpg" type="image/png">
+</head>
+
+<body>
+    <div id="outer">
+        <header>
+            <nav id="menu">
+                <div id="Logo">
+                    <h2>Yer Nails</h2>
+                </div>
+
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
+                </div>
+
+                <div id="navmenu">
+                    <a href="index.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>
+                    <a href="Blog.html">
+                        <h3>Blogs</h3>
+                    </a>
+                    <a href="Contacto.html">
+                        <h3>Contacto</h3>
+                    </a>
+                    <a href="PreguntasFrecuentes.html">
+                        <h3>Preguntas Frecuentes</h3>
+                    </a>
+                </div>
+
+                <div id="espaciador"></div>
+            </nav>
+
+        </header>
+
+        <main>
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <img src="./img/marcoIzq.png" alt="">
+                    <h3>¿Cómo puedo hacer una cita?</h3>
+                    <p>Puedes hacer una cita a través de nuestro número de WhatsApp - <strong>61055884</strong></p>
+                </div>
+                <div class="faq-item">
+                    <img src="./img/marcoCen.png" alt="">
+                    <h3>¿Qué servicios ofrecen?</h3>
+                    <p>Ofrecemos una variedad de servicios de manicura, pedicura y diseño de uñas.</p>
+                </div>
+                <div class="faq-item">
+                    <img src="./img/marcoDer.png" alt="">
+                    <h3>¿Dónde estás ubicada?</h3>
+                    <h4>Ubicación exacta:</h4>
+                    <p>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás.</p>
+                </div>
+
+                <div class="faq-item">
+                    <img src="./img/marcoIzq.png" alt="">
+                    <h3>¿Cuáles son tus horarios de atención?</h3>
+                    <p>De 9am a 5pm</p>
+                </div>
+                <div class="faq-item">
+                    <img src="./img/marcoCen.png" alt="">
+                    <h3>¿Cuales son tus metodos de pago?</h3>
+                    <p>Los métodos de pago que manejo son <strong>efectivo</strong> y <strong>SINPE</strong>.</p>
+                </div>
+                <a href="https://www.instagram.com/yernailstudio?igsh=MWVqeDNybjlmNXVu">
+                    <div class="faq-item">
+                        <img src="./img/marcoDer.png" alt="Instagram">
+                        <h3>¿Tienes redes sociales?</h3>
+                        <p>Sí, puedes seguirnos en Instagram como <em>@Yernails</em>
+                            <br> (Haz click para ver mi perfil)
+                        </p>
+                    </div>
+                </a>
+                <div class="faq-item">
+                    <img src="./img/marcoIzq.png" alt="">
+                    <h3>¿Qué servicios ofreces?</h3>
+                    <ul>
+                        <li>Gel X</li>
+                        <li>Esmaltado semipermanente</li>
+                        <li>Manicura tradicional</li>
+                        <li>Gel calcio</li>
+                        <li>Rubber base</li>
+                    </ul>
+                </div>
+                <div class="faq-item">
+                    <img src="./img/marcoCen.png" alt="">
+                    <h3>¿Qué debo hacer si necesito cancelar mi cita?</h3>
+                    <p>Debes contactarme por whatsapp lo antes posible, así otra persona podrá aprovechar el espacio</p>
+                </div>
+                <div class="faq-item">
+                    <img src="./img/marcoDer.png" alt="">
+                    <h3>¿Qué debo hacer si tengo una alergia o sensibilidad a algún producto?</h3>
+                    <p>Por favor, infórmanos antes de tu cita para que podamos tomar las precauciones necesarias.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
+
+    <footer id="Footer">
+        <div id="Redes">
+            <div id="red">
+                <a href="https://wa.me/50661055884">
+                    <img src="Resources/whatsapp.png" alt="">
+                </a>
+                <h3>6105-5884</h3>
+            </div>
+            <div id="red">
+                <a href="https://www.instagram.com/yernailstudio?igsh=MWVqeDNybjlmNXVu">
+                    <img src="Resources/instagram.png" alt="">
+                </a>
+                <h3>Yer Nails</h3>
+            </div>
+        </div>
+        <div id="Ubicación">
+            <h2>Ubicación</h2>
+            <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,713 @@
+h2 {
+    font-family: 'Abibas', sans-serif;
+    color: #A55166;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'MedulaOne', sans-serif;
+    color: #A55166;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------- */
+/* Menu */
+/* ------------------- */
+
+#menu {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-size: 1em;
+    border-radius: 200px;
+    margin: 20px 20px;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+#menu h3 {
+    color: #A55166;
+}
+
+#Logo {
+    flex: 1;
+    padding-left: 30px;
+}
+
+#navmenu {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+#espaciador {
+    flex: 1;
+}
+
+#navmenu a h3 {
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navmenu a:hover h3 {
+    color: #FFFFFF;
+    background-color: #A55166;
+}
+
+#burger {
+    display: none;
+    cursor: pointer;
+}
+
+#burger img {
+    width: 50px;
+    height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #navmenu {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        flex-direction: column;
+        background: linear-gradient(135deg, #E4A0B7, #B75D7A);
+        border-radius: 15px;
+        padding: 15px;
+        display: none;
+        width: 60%;
+        max-width: 250px;
+    }
+
+    #menu h3 {
+        color: white;
+    }
+
+    #navmenu.active {
+        display: flex;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    #espaciador {
+        display: none;
+    }
+}
+
+
+/* ------------------- */
+/* RESPONSIVE STYLE */
+/* ------------------- */
+
+/* --------- RESET --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------- FUENTES --------- */
+@font-face {
+    font-family: 'Abibas';
+    src: url(./Fonts/Abibas.ttf);
+}
+
+@font-face {
+    font-family: 'MedulaOne';
+    src: url(./Fonts/MedulaOne.ttf);
+}
+
+body {
+    background-color: #fde8f0;
+    color: #6d2245;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* --------- CONTAINER --------- */
+.container {
+    max-width: 1200px;
+    margin: 2em;
+    padding: 10px;
+}
+
+/* --------- SECCIÓN TOP --------- */
+.top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1px;
+    align-items: start;
+}
+
+/* LOGO */
+.logo img {
+    width: 25em;
+    border-radius: 15px;
+}
+
+/* CUADRO INFO */
+.card-info {
+    border-radius: 15px;
+    height: auto;
+    padding: 3px;
+    color: white;
+    display: grid;
+    grid-column: 1 1fr;
+    grid-row: 2 1fr;
+    margin-top: -0.7em;
+}
+
+.card-info .gradient img {
+    width: 25.1em;
+    border-radius: 18px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-info .info {
+    background-color: white;
+    width: 24em;
+    height: 18em;
+    border-radius: 15px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -14em;
+    margin-left: 0.5em;
+}
+
+
+.card-info .subtitulo {
+    font-family: 'MedulaOne', sans-serif;
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #b24d7b;
+}
+
+.card-info h2 {
+    margin: 0 0 10px;
+    font-size: 40px;
+    font-family: 'Abibas', sans-serif;
+    color: #b24d7b;
+}
+
+.card-info button {
+    background: linear-gradient(to right, #b24d7b, #e6b0cf);
+    color: white;
+    font-family: 'MedulaOne', sans-serif;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    font-size: 30px;
+}
+
+/* COLUMNA DERECHA (HELLO KITTY + REDES) */
+.lateral-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-img img {
+    width: 24em;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-redes {
+    background: linear-gradient(to right, #b24d7b, #e6b0cf);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.card-redes p {
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-family: 'MedulaOne', sans-serif;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.iconos img {
+    width: 35px;
+}
+
+/* --------- SERVICIOS --------- */
+.servicios {
+    margin: 10px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.servicios h2 {
+    color: #8b2c5d;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Abibas', sans-serif;
+}
+
+.servicios-lista {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.servicios-lista ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.servicios-lista .izq li {
+    background: white;
+    font-family: 'medulaone', sans-serif;
+    width: 20em;
+    font-size: 30px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #6d2245;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.servicios-lista .der li {
+    background: linear-gradient(to right, #b24d7b, #e6b0cf);
+    font-family: 'medulaone', sans-serif;
+    font-size: 30px;
+    width: 21.8em;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: -7em;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* --------- IDENTIDAD --------- */
+.identidad {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.identidad h2 {
+    color: #8b2c5d;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: 'Abibas', sans-serif;
+}
+
+.identidad-contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.identidad-contenido img {
+    width: 300px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.textos .mision {
+    background: linear-gradient(to bottom, #b24d7b, #e6b0cf);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.textos .mision h3 {
+    color: white;
+}
+
+
+.textos .vision {
+    background-color: white;
+    color: #6d2245;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: -3.3em;
+}
+
+
+.textos h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.textos p {
+    font-size: 30px;
+    margin-top: 5px;
+    font-family: 'medulaone', sans-serif;
+}
+
+/* --------- RESPONSIVE --------- */
+@media (max-width: 768px) {
+    .container {
+        padding: 5px;
+    }
+
+    .top {
+        grid-template-columns: 3, 1fr;
+        align-items: center;
+    }
+
+    .top .logo img {
+        width: 14em;
+        margin-left: -0.5em;
+    }
+
+    .card-info {
+        margin-left: -5.5em;
+    }
+
+    .card-info .gradient img {
+        width: 11em;
+    }
+
+    .card-info .info {
+        width: 10em;
+        height: 11.2em;
+        margin-top: -6em;
+    }
+
+    .card-info h2 {
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    .card-info .subtitulo {
+        font-size: 1.4em;
+    }
+
+    .card-info button {
+        font-size: 1.2em;
+        padding: 5px 10px;
+        align-self: center;
+    }
+
+    .lateral-derecha {
+        margin-left: -3.5em;
+        margin-top: -2.5em;
+    }
+
+    .lateral-derecha .card-img img {
+        width: 13em;
+    }
+
+    .lateral-derecha p{
+        font-size: 1.5em;   
+    }
+
+    .lateral-derecha .iconos img {
+        width: 2.5em;
+    }
+
+    .card-redes {
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        width: 11.8em;
+    }
+
+    .servicios-lista {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .servicios-lista .izq li {
+        width: 13em;
+        font-size: 1.5em;
+        border-radius: 15px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .servicios-lista .der {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        margin-left: 16em;
+        margin-top: -11.7em;
+    }
+
+    .servicios-lista .der li {
+        font-size: 1.5em;
+        width: 13em;
+        margin-left: 0.02em;
+        border-radius: 20px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+
+    .identidad-contenido img {
+        width: 16em;
+        margin-bottom: 10px;
+    }
+
+    .mision, .vision {
+        padding: 10px;
+        border-radius: 15px;
+        width: 18em;
+    }
+
+    .textos h3{
+        font-size: 1.8em;
+    }
+
+    .textos p {
+        font-size: 1.6em;
+    }
+
+    .textos .vision {
+        margin-top: -6em;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        padding: 2px;
+    }
+
+    .top {
+        grid-template-columns: 3, 1fr;
+        align-items: center;
+    }
+
+    .top .logo img {
+        width: 8em;
+        margin-left: -1.2em;
+    }
+
+    .card-info {
+        margin-left: -0.4em;
+    }
+
+    .card-info .gradient img {
+        width: 8em;
+    }
+
+    .card-info .info {
+        width: 7em;
+        height: 7em;
+        margin-top: -4em;
+    }
+
+    .card-info h2 {
+        font-size: 0.6em;
+        text-align: left;
+    }
+
+    .card-info .subtitulo {
+        font-size: 0.8em;
+    }
+
+    .card-info button {
+        font-size: 0.6em;
+        padding: 5px 10px;
+        align-self: center;
+    }
+
+    .lateral-derecha {
+        margin-left: -1em;
+        margin-top: -1.3em;
+    }
+
+    .lateral-derecha .card-img img {
+        width: 8em;
+    }
+
+    .lateral-derecha p{
+        font-size: 1em;   
+    }
+
+    .lateral-derecha .iconos img {
+        width: 1em;
+    }
+
+    .card-redes {
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        width: 7em;
+        margin-left: 0.6em;
+    }
+
+    .servicios-lista {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .servicios-lista .izq li {
+        width: 8em;
+        font-size: 1em;
+        border-radius: 15px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .servicios-lista .der {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        margin-left: 7em;
+        margin-top: -10em;
+    }
+
+    .servicios-lista .der li {
+        font-size: 1em;
+        width: 11em;
+        margin-left: 0.02em;
+        border-radius: 20px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+
+    .identidad-contenido img {
+        width: 16em;
+        margin-bottom: 10px;
+    }
+
+    .mision, .vision {
+        padding: 10px;
+        border-radius: 15px;
+        width: 18em;
+    }
+
+    .textos h3{
+        font-size: 1.8em;
+    }
+
+    .textos p {
+        font-size: 1.6em;
+    }
+
+    .textos .vision {
+        margin-top: -6em;
+    }
+}
+
+#Footer {
+    background-color: #A55166;
+    padding: 20px 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    width: 100%;
+    flex-shrink: 0;
+
+    h2 {
+        color: #FFFFFF;
+        font-size: 1.2em;
+        margin: 0 15px;
+    }
+
+    h3 {
+        color: #FFFFFF;
+        font-size: 1em;
+        margin: 0 15px;
+    }
+
+    #Redes {
+        flex: 1;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        flex-direction: column;
+        border-right: #FFFFFF 1px solid;
+    }
+
+    #Ubicación {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        h2 {
+            font-size: 2em;
+            color: #FFFFFF;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #FFFFFF;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+#red {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        color: #FFFFFF;
+    }
+}

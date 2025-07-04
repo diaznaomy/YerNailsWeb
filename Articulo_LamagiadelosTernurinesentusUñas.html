@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La magia de los Ternurines en tus uñas</title>
+    <link rel="stylesheet" href="Css/Articulo.css">
+    <link rel="icon" href="img/Logo.jpg" type="image/png">
+</head>
+
+<body>
+    <div id="outer">
+
+        <header>
+            <nav id="menu">
+                <div id="Logo">
+                    <h2>Yer Nails</h2>
+                </div>
+                <div id="burger">
+                    <img src="./img/burgerMenu.png" alt="menu" id="burgerIcon">
+                </div>
+                <div id="navmenu">
+                    <a href="index.html">
+                        <h3>Inicio</h3>
+                    </a>
+                    <a href="Nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>
+                    <a href="Blog.html">
+                        <h3>Blogs</h3>
+                    </a>
+                    <a href="Contacto.html">
+                        <h3>Contacto</h3>
+                    </a>
+                    <a href="PreguntasFrecuentes.html">
+                        <h3>Preguntas Frecuentes</h3>
+                    </a>
+                    <a href="AcercaDe.html">
+                        <h3>Acerca de</h3>
+                    </a>
+                </div>
+                <div id="espaciador"></div>
+            </nav>
+        </header>
+
+        <nav id="ComboBox">
+            <nav id="Logo">
+                <h3>BLOGS</h3>
+            </nav>
+            <div id="Combo">
+                <h3>Categoría</h3>
+                <div id="Categoria">
+                    <select id="Categorias" onchange="location = this.value;">
+                        <option value="Experiencias.html" selected disabled>Selecciona una categoría</option>
+                        <option value="Blog.html">Todos los Artículos</option>
+                        <option value="Temporada.html">Uñas para Temporada</option>
+                        <option value="Experiencias.html">Experiencias Diseñando</option>
+                        <option value="Personalizados.html">Diseños Personalizados</option>
+                    </select>
+                </div>
+                <img src="Resources/lupa.png" alt="">
+            </div>
+        </nav>
+
+        <div id="texto">
+            <h3><a href="Blog.html">Blogs</a> / La magia de los Ternurines en tus uñas</h3>
+        </div>
+
+        <main id="main">
+
+            <div class="caja">
+                <div id="up">
+                    <img src="Resources/Articulo_Ternurines.jpg" alt="">
+                    <div id="Articulo">
+                        <h2>Sumérgete en un mundo de fantasía y ternura con estos diseños inspirados en los adorables Ternurines</h2>
+                        <h3>Llevar la magia de estos personajes en tus uñas 
+                            es una manera perfecta de expresar tu estilo y 
+                            personalidad, transmitiendo dulzura y alegría en cada detalle. 
+                            La imagen muestra una propuesta encantadora en la que predominan los 
+                            tonos pastel, los detalles en relieve y las aplicaciones tridimensionales.
+                            Cada uña es una pequeña obra de arte: flores 3D en tonos rosados, perlas que enmarcan a 
+                            los Ternurines y trazos suaves en azul, rosa y amarillo, que se mezclan armoniosamente para 
+                            dar un acabado delicado y sofisticado.
+                        </h3>
+                    </div>
+                </div>
+                <div id="down">
+                    <div id="Articulo">
+                        <h2>Los Ternurines, protagonistas del diseño</h2>
+                        <h3>
+                            Aportando un toque de inocencia y simpatía, convirtiendo tus manos en el centro de todas las miradas.
+                            Este tipo de nail art es ideal para quienes buscan algo diferente, creativo y cargado de significado. 
+                            Perfecto para ocasiones especiales o simplemente para consentirte y recordar que la dulzura puede estar 
+                            presente en los pequeños detalles del día a día. Atrévete a lucir la magia de los Ternurines en tus uñas 
+                            y deja que tu esencia brille con cada movimiento.
+                        </h3>
+                    </div>
+                    <img src="Resources/TernurinesPNG.png" alt="">
+                </div>
+            </div>
+
+            <div class="Comentarios">
+                <h2>Comentarios</h2>
+                <div id="coment">
+                    <div>
+                        <img src="Resources/avatar.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Brenda</h2>
+                    </div>
+                    <div>
+                        <img src="Resources/like.png" alt="">
+                    </div>
+                </div>
+                <div id="reseña">
+                    <h3>¡Encantada con el resultado! Se nota el amor por lo que hacen. Gracias, chicas. ✨</h3>
+                </div>
+                <div id="insertar">
+                    <h3>Agrega tu comentario</h3>
+                    <div id="publicar">
+                        <input type="text" id="insert" placeholder="Escriba su comentario aquí">
+                        <button>Publicar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="Footer">
+        <div id="Redes">
+            <div id="red">
+                <img src="Resources/whatsapp.png" alt="">
+                <h3>6105-5884</h3>
+            </div>
+            <div id="red">
+                <a href="https://www.instagram.com/yernailstudio/"><img src="Resources/instagram.png" alt=""></a>
+                <h3>Year Nails</h3>
+            </div>
+        </div>
+        <div id="Ubicacion">
+            <h2>Ubicación</h2>
+            <h3>En San Pedro de Poás de Alajuela, frente al polideportivo de Poás</h3>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navmenu = document.getElementById('navmenu');
+
+        burger.addEventListener('click', () => {
+            navmenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
