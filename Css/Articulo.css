@@ -149,7 +149,7 @@ select option {
     }
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -234,7 +234,7 @@ select option {
 }
 
 .caja {
-    background-color: #A55166;
+    background: linear-gradient(270deg, #ffb3c8 0%, #ffd6e2 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,6 +282,22 @@ select option {
     }
 }
 
+.highlight {
+    background-color: #fdaac2;
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.sub {
+    color: white;
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: -0.7em;
+}
+
 #Articulo {
     margin-left: 25px;
     margin-right: 25px;
@@ -299,8 +315,12 @@ h2 {
     margin-bottom: 10px;
 }
 
+#Articulo h3 {
+    color: #A55166;
+}
+
 #Articulo h2 {
-    font-family: Abibas, sans-serif;
+    font-family: medulaone, sans-serif;
     font-size: 1.8em;
 }
 
@@ -392,7 +412,7 @@ h2 {
     }
 }
 
-#insertar{
+#insertar {
     margin-top: 20px;
 }
 
@@ -507,15 +527,17 @@ h2 {
         margin-left: 20px;
     }
 
-    #up,#down {
-        img{
+    #up,
+    #down {
+        img {
             width: 100%;
             max-width: 250px;
             height: auto;
             margin-left: 0;
         }
 
-        h2,h3{
+        h2,
+        h3 {
             font-size: 1em;
         }
     }
@@ -528,7 +550,7 @@ h2 {
         margin: 20px 5%;
     }
 
-    #texto h3{
+    #texto h3 {
         font-size: 1em;
     }
 
@@ -540,16 +562,17 @@ h2 {
         margin-left: 0px;
     }
 
-    #Footer{
+    #Footer {
         #Ubicacion {
             flex-direction: column;
             align-items: center;
             text-align: center;
 
-            h2{
+            h2 {
                 font-size: 1.2em;
             }
-            h3{
+
+            h3 {
                 font-size: 1em;
             }
         }
@@ -561,14 +584,14 @@ h2 {
         background-color: #B75D7A;
         width: 100%;
 
-        h3{
+        h3 {
             font-size: 2em;
             margin-left: 0;
             padding: 0;
             margin-bottom: 5px;
         }
 
-        img{
+        img {
             display: none;
         }
     }
@@ -577,33 +600,37 @@ h2 {
         display: none;
     }
 
-    #up,#down {
+    #up,
+    #down {
         display: flex;
         flex-direction: column;
         align-items: center;
-        img{
+
+        img {
             width: 100%;
             max-width: 200px;
             height: auto;
             margin-left: 0;
         }
 
-        h2{
+        h2 {
             font-size: 1em;
         }
-        h3{
+
+        h3 {
             font-size: 0.8em;
         }
     }
 
-    #insertar{
+    #insertar {
         #insert {
             width: 100%;
             padding: 12px;
             margin-left: 20px;
             margin-right: 5px;
         }
-        button{
+
+        button {
             margin-right: 20px;
         }
     }
